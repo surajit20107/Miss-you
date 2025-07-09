@@ -39,15 +39,15 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser to expl
 
 Follow me for more emotional surprise websites and creative dev content:
 
-- 📷 Instagram: [@anujbuilds](https://instagram.com/anujbuilds)  
-- 🎬 YouTube: [@anujbuilds](https://youtube.com/@anujbuilds)  
-- 🐦 Twitter: [@anujbuilds](https://twitter.com/anujbuilds)  
-- 💼 LinkedIn: [Anuj Chaudhary](https://linkedin.com/in/anujchaudhary549)
+- 📷 Instagram: [ig.surajit_07](https://instagram.com/ig.surajit_07)  
+- 🎬 Website: [surajit-dev](https://surajit-dev.vercel.com)  
+- 🐦 Twitter: [Surajit](https://twitter.com/surajit_20107)  
+- 💼 LinkedIn: [Surajit](https://linkedin.com/in/surajit-jana20107)
 
 ---
 
 ## ⭐ Support
 
-If you found this project lovely, please consider giving it a ⭐ on [GitHub](https://github.com/Anuj579)  
+If you found this project lovely, please consider giving it a ⭐ on [GitHub](https://github.com/surajit20107)  
 Thank you for being here! 🫶  
-Made with emotions by **Anuj** – _@anujbuilds_
+Made with emotions by **Surajit** – _@surajit20107_
