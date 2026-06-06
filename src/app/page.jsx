@@ -7,6 +7,7 @@ import WelcomeScreen from "@/components/WelcomeScreen"
 import MissCounterScreen from "@/components/MissCounterScreen"
 import MessageScreen from "@/components/MessageScreen"
 import MemoriesScreen from "@/components/MemoriesScreen"
+import LoveAlbumScreen from "@/components/LoveAlbumScreen"
 import FinalScreen from "@/components/FinalScreen"
 import BackgroundAnimation from "@/components/BackgroundAnimation"
 import MusicPlayer from "@/components/MusicPlayer"
@@ -29,7 +30,7 @@ export default function Home() {
       setShowMusicControl(true)
       setMusicPlaying(true)
     }
-    setCurrentScreen((prev) => (prev + 1) % 5)
+    setCurrentScreen((prev) => (prev + 1) % 6)
   }
 
   if (isLoading) {
@@ -40,7 +41,6 @@ export default function Home() {
     <div className="min-h-screen bg-black relative overflow-hidden font-cute">
       <BackgroundAnimation />
 
-      {/* For background song */}
       {showMusicControl && (
         <MusicPlayer musicPlaying={musicPlaying} />
       )}
@@ -87,6 +87,16 @@ export default function Home() {
           />
         )}
         {currentScreen === 4 && (
+          <LoveAlbumScreen
+            key="album"
+            onNext={nextScreen}
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -60 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          />
+        )}
+        {currentScreen === 5 && (
           <FinalScreen
             key="final"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -96,7 +106,6 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Watermark */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
