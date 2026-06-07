@@ -22,13 +22,13 @@ const photos = [
     {
         id: 3,
         src: "/images/4.jpg",
-        caption: "Dancing Together 💃",
+        caption: "Just You & Me 💃",
         layout: "third",
     },
     {
         id: 4,
         src: "/images/5.jpg",
-        caption: "Sunset Walks 🌅",
+        caption: "Sunrise Walks in winter ❄️",
         layout: "third",
     },
     { id: 5, src: "/images/2.jpg", caption: "Just Us 🥰", layout: "half" },
