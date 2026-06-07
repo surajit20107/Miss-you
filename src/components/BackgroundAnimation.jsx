@@ -1,3 +1,5 @@
+"use client"
+
 import { memo, useEffect, useState } from 'react'
 
 const BackgroundAnimation = memo(function BackgroundAnimation() {

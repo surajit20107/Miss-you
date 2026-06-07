@@ -26,46 +26,13 @@ body {
   user-select: none;
 }
 
-button{
+button {
   cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .font-cute {
   font-family: "Comfortaa", cursive;
-}
-
-/* Swiper customization */
-.memories-swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.memories-swiper .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-}
-
-.memories-swiper .swiper-pagination-bullet {
-  background: rgba(244, 114, 182, 0.7) !important;
-  width: 10px !important;
-  height: 10px !important;
-  transition: all 0.3s ease !important;
-}
-
-.memories-swiper .swiper-pagination-bullet-active {
-  background: #f472b6 !important;
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(244, 114, 182, 0.5);
-}
-
-@media (max-width: 768px) {
-  .memories-swiper .swiper-slide {
-    width: 250px;
-    height: 350px;
-  }
 }
 
 /* Custom scrollbar */
@@ -86,25 +53,18 @@ button{
   background: rgba(244, 114, 182, 0.5);
 }
 
-/* Smooth button transitions only — don't apply globally, conflicts with Framer Motion */
-button {
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+/* Background particle animations (CSS-only, GPU accelerated) */
+@keyframes starPulse {
+  0%, 100% { opacity: 0.15; transform: scale(0.6); }
+  50%       { opacity: 0.8;  transform: scale(1.2); }
 }
 
-/* Remove any unwanted hover effects */
-.swiper-slide * {
-  pointer-events: none;
+@keyframes heartFloat {
+  0%, 100% { opacity: 0.15; transform: translateY(0px)   rotate(0deg); }
+  50%       { opacity: 0.4;  transform: translateY(-40px) rotate(15deg); }
 }
 
-.swiper-slide {
-  cursor: grab;
-}
-
-.swiper-slide:active {
-  cursor: grabbing;
-}
-
-/* Gradient background */
+/* Gradient background utility */
 .bg-cute-gradient {
   background: linear-gradient(135deg, #0a0014 0%, #120022 100%);
 }
