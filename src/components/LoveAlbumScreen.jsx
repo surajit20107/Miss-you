@@ -10,13 +10,13 @@ const photos = [
     {
         id: 1,
         src: "/images/1.jpg",
-        caption: "Our First Date 💕",
+        caption: "That Cute Selfie 📸",
         layout: "full",
     },
     {
         id: 2,
         src: "/images/3.jpg",
-        caption: "That Cute Selfie 📸",
+        caption: "My Favourite Moment ✨",
         layout: "third",
     },
     {
@@ -35,7 +35,7 @@ const photos = [
     {
         id: 6,
         src: "/images/6.jpg",
-        caption: "My Favourite Moment ✨",
+        caption: "Our First Date 💕",
         layout: "half",
     },
 ];

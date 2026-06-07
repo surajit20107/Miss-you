@@ -8,8 +8,8 @@ export default function MessageScreen({ onNext, ...motionProps }) {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isTyping, setIsTyping] = useState(true)
 
-    const message =
-        "My love, I think about you in the middle of everything — mid-sentence, mid-laugh, mid-breath. You've ruined every song for me because now they all sound like you. The way you say my name, the way you laugh when something really gets you — I replay those moments like they're the best parts of a movie I never want to end. Distance is just the universe testing how strong this thing between us really is. And baby, it's unbreakable. I love you more than I'll ever know how to say 💕✨"
+    const message = 'i love you more than i can say. you are my favorite person in the world. i miss you so much. i cant wait to see you again. i love you so much.'
+        // "My love, I think about you in the middle of everything — mid-sentence, mid-laugh, mid-breath. You've ruined every song for me because now they all sound like you. The way you say my name, the way you laugh when something really gets you — I replay those moments like they're the best parts of a movie I never want to end. Distance is just the universe testing how strong this thing between us really is. And baby, it's unbreakable. I love you more than I'll ever know how to say 💕✨"
 
     useEffect(() => {
         if (currentIndex < message.length) {

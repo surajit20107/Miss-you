@@ -86,9 +86,9 @@ button{
   background: rgba(244, 114, 182, 0.5);
 }
 
-/* Smooth animations */
-* {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* Smooth button transitions only — don't apply globally, conflicts with Framer Motion */
+button {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Remove any unwanted hover effects */
